@@ -128,7 +128,6 @@ const handlePin = () => emit('pin', props.item)
   border-radius: 20rpx;
   margin-bottom: 24rpx;
   box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
-  overflow: hidden;
   transition: transform 0.2s ease;
 
   &:active {
