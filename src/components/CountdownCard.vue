@@ -125,10 +125,10 @@ const handlePin = () => emit('pin', props.item)
   display: flex;
   flex-direction: row;
   background-color: #FFFFFF;
-  border-radius: 28rpx;
+  border-radius: 20rpx;
   margin-bottom: 24rpx;
   box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
-  overflow: visible;
+  overflow: hidden;
   transition: transform 0.2s ease;
 
   &:active {
@@ -136,11 +136,11 @@ const handlePin = () => emit('pin', props.item)
   }
 }
 
-/* 左侧装饰条 */
+/* 左侧装饰条 - 用伪元素实现，完美贴合卡片圆角 */
 .card-accent {
   width: 8rpx;
   flex-shrink: 0;
-  border-radius: 28rpx 0 0 28rpx;
+  border-radius: 20rpx 0 0 20rpx;
 }
 
 /* 卡片主体 */
