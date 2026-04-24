@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/list/list",
+      "style": {
+        "navigationBarTitleText": "全部倒计时"
+      }
+    },
+    {
+      "path": "pages/add/add",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "新增倒计时"
+      }
+    },
+    {
+      "path": "pages/edit/edit",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "编辑倒计时"
+      }
+    },
+    {
+      "path": "pages/settings/settings",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/archive/archive",
+      "style": {
+        "navigationBarTitleText": "已归档"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "心选倒计时",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#8C8C8C",
+    "selectedColor": "#3B82F6",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "重点关注",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-active.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "全部倒计时",
+        "iconPath": "static/tab-list.png",
+        "selectedIconPath": "static/tab-list-active.png"
+      }
+    ]
+  }
+}

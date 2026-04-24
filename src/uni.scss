@@ -1,0 +1,62 @@
+/**
+ * uni.scss - 全局SCSS变量定义
+ * 定义应用的主题色、字体大小、间距等通用变量
+ * 此文件会通过vite配置自动注入到每个组件的样式中
+ */
+
+/* ==================== 主题色 ==================== */
+// 主色调
+$primary-color: #5677fc;
+$primary-color-light: #8b9ffc;
+$primary-color-dark: #3a5bd9;
+
+// 辅助色
+$success-color: #19be6b;
+$warning-color: #ff9900;
+$error-color: #fa3534;
+$info-color: #909399;
+
+/* ==================== 文字颜色 ==================== */
+$text-color-primary: #303133;
+$text-color-regular: #606266;
+$text-color-secondary: #909399;
+$text-color-placeholder: #c0c4cc;
+
+/* ==================== 背景色 ==================== */
+$bg-color: #f8f8f8;
+$bg-color-white: #ffffff;
+$bg-color-grey: #f4f4f5;
+
+/* ==================== 边框颜色 ==================== */
+$border-color: #e4e7ed;
+$border-color-light: #ebeef5;
+
+/* ==================== 字体大小 ==================== */
+$font-size-xs: 20rpx;
+$font-size-sm: 24rpx;
+$font-size-base: 28rpx;
+$font-size-md: 30rpx;
+$font-size-lg: 32rpx;
+$font-size-xl: 36rpx;
+$font-size-xxl: 40rpx;
+$font-size-title: 48rpx;
+
+/* ==================== 间距 ==================== */
+$spacing-xs: 8rpx;
+$spacing-sm: 16rpx;
+$spacing-base: 24rpx;
+$spacing-md: 32rpx;
+$spacing-lg: 40rpx;
+$spacing-xl: 48rpx;
+
+/* ==================== 圆角 ==================== */
+$border-radius-sm: 8rpx;
+$border-radius-base: 12rpx;
+$border-radius-md: 16rpx;
+$border-radius-lg: 24rpx;
+$border-radius-round: 999rpx;
+
+/* ==================== 阴影 ==================== */
+$box-shadow-sm: 0 2rpx 8rpx rgba(0, 0, 0, 0.05);
+$box-shadow-base: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
+$box-shadow-lg: 0 8rpx 32rpx rgba(0, 0, 0, 0.12);

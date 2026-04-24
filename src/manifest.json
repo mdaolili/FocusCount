@@ -1,0 +1,87 @@
+{
+  "name": "心选倒计时",
+  "appid": "__UNI__DEFAULT_APPID",
+  "description": "心选倒计时 - 记录每一个重要的时刻",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    "distribute": {
+      "android": {
+        "permissions": []
+      },
+      "ios": {},
+      "sdkConfigs": {}
+    },
+    "widgets": [
+      {
+        "name": "countdown-widget",
+        "description": "心选倒计时桌面小组件 - 展示置顶倒计时的名称和剩余天数",
+        "minWidth": 4,
+        "minHeight": 2,
+        "updateInterval": 1800000,
+        "targetCellWidth": 4,
+        "targetCellHeight": 2,
+        "android": {
+          "provider": "com.focuscount.widget.CountdownWidgetProvider",
+          "layoutName": "widget_countdown_layout",
+          "previewLayout": "widget_countdown_preview",
+          "resizeMode": "horizontal|vertical",
+          "minResizeWidth": 3,
+          "minResizeHeight": 1,
+          "targetCellWidth": 4,
+          "targetCellHeight": 2,
+          "updatePeriodMillis": 1800000,
+          "initialLayout": "@layout/widget_countdown_layout"
+        },
+        "ios": {
+          "kind": "FocusCountWidget",
+          "bundleIdentifier": "com.focuscount.widget",
+          "displayName": "心选倒计时",
+          "description": "快速查看置顶倒计时",
+          "supportedFamilies": ["systemSmall", "systemMedium"]
+        }
+      }
+    ]
+  },
+  "quickapp": {},
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": false,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true
+  },
+  "mp-alipay": {
+    "usingComponents": true
+  },
+  "mp-baidu": {
+    "usingComponents": true
+  },
+  "mp-toutiao": {
+    "usingComponents": true
+  },
+  "h5": {
+    "title": "心选倒计时",
+    "router": {
+      "mode": "hash"
+    },
+    "optimization": {
+      "treeShaking": {
+        "enable": true
+      }
+    }
+  },
+  "vueVersion": "3"
+}

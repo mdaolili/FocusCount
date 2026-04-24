@@ -1,0 +1,204 @@
+/**
+ * 通用样式
+ * 页面基础样式、文字截断、Flex布局工具类、安全区域适配
+ */
+
+@import './variables.scss';
+
+/* ========== 页面基础样式 ========== */
+page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+  font-size: $font-size-base;
+  color: var(--text-color-primary);
+  background-color: var(--bg-color-page);
+  line-height: 1.6;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== 文字截断 ========== */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-ellipsis-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-ellipsis-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ========== Flex 布局工具类 ========== */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* 主轴对齐 */
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+/* 交叉轴对齐 */
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+/* ========== 安全区域适配 ========== */
+.safe-area-top {
+  padding-top: $safe-area-top;
+}
+
+.safe-area-bottom {
+  padding-bottom: $safe-area-bottom;
+}
+
+.safe-area-all {
+  padding-top: $safe-area-top;
+  padding-bottom: $safe-area-bottom;
+  padding-left: $safe-area-left;
+  padding-right: $safe-area-right;
+}
+
+/* ========== 页面容器 ========== */
+.page-container {
+  min-height: 100vh;
+  background-color: var(--bg-color-page);
+  padding: $spacing-lg;
+}
+
+/* ========== 卡片基础样式 ========== */
+.card-base {
+  background-color: var(--bg-color-card);
+  border-radius: $border-radius-md;
+  padding: $spacing-lg;
+  box-shadow: $shadow-sm;
+  margin-bottom: $spacing-md;
+}
+
+/* ========== 按钮样式 ========== */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+  border: none;
+  border-radius: $border-radius-md;
+  padding: $spacing-md $spacing-xl;
+  font-size: $font-size-md;
+  text-align: center;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.btn-default {
+  background-color: var(--bg-color-card);
+  color: var(--text-color-primary);
+  border: 2rpx solid var(--border-color);
+  border-radius: $border-radius-md;
+  padding: $spacing-md $spacing-xl;
+  font-size: $font-size-md;
+  text-align: center;
+
+  &:active {
+    background-color: var(--bg-color-hover);
+  }
+}
+
+/* ========== 分隔线 ========== */
+.divider {
+  height: 1rpx;
+  background-color: var(--border-color-light);
+  margin: $spacing-md 0;
+}
+
+/* ========== 标签样式 ========== */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-xs;
+  line-height: 1;
+}
+
+/* ========== 底部固定按钮区域 ========== */
+.bottom-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: $spacing-lg;
+  padding-bottom: calc(#{$spacing-lg} + #{$safe-area-bottom});
+  background-color: var(--bg-color-card);
+  box-shadow: 0 -2rpx 12rpx rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+
+/* ========== 空状态区域 ========== */
+.empty-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xxl * 2 $spacing-xl;
+}
